@@ -10,6 +10,7 @@ class PageViewDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     final pageController=PageController(initialPage: 0);
     return Scaffold(
+
       body: PageView(
         controller: pageController,
         scrollDirection: Axis.vertical,

@@ -16,14 +16,15 @@ class _IndexingDemoState extends State<IndexingDemo> {
     ['shake', false],
   ];
 
-  void CoffeSelected(int index) {
-    setState(() {
-      for (int i = 0; i < coffeTypes.length; i++) {
-        coffeTypes[i][1] = false;
-      }
-      coffeTypes[index][1] = true;
-      Navigator.push(context, MaterialPageRoute(builder: (context)=>DemoPage()));
-    });
+
+  void CoffeeSelected(int index){
+   setState(() {
+     for(int i=0;i<coffeTypes.length;i++){
+       coffeTypes[i][1]=false;
+     }
+     coffeTypes[index][1]=true;
+   });
+
   }
 
   @override
@@ -44,7 +45,7 @@ class _IndexingDemoState extends State<IndexingDemo> {
                 coffeTypes: coffeTypes[index][0],
                 isSelected: coffeTypes[index][1],
                 onTap: () {
-                  CoffeSelected(index);
+                  CoffeeSelected(index);
                 });
           },
         ),

@@ -10,7 +10,8 @@ class NeoBox extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Center(
         child: Moje(
-          child: Image.network('https://images.pexels.com/photos/4982737/pexels-photo-4982737.jpeg?cs=srgb&dl=pexels-shadab-1650775-4982737.jpg&fm=jpg',fit: BoxFit.cover,)
+          child: Image.network('https://encrypted-tbn0.gstatic.com/'
+              'images?q=tbn:ANd9GcT5_0CRmJGP9COfqnVEk6H_0cdTFf8qtBFCxA&s',fit: BoxFit.cover,)
         )
       ),
     );
@@ -25,8 +26,8 @@ class Moje extends StatelessWidget{
   Widget build(BuildContext context) {
      return Container(
        child: child,
-       width: 120,
-       height: 120,
+       width: 150,
+       height: 150,
        decoration: BoxDecoration(
            color: Colors.grey,
            borderRadius: BorderRadius.circular(12),
